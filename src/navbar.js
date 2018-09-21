@@ -1,5 +1,5 @@
 import React from 'react';
 
-const NavBar = () => <h1>Nav bar</h1>;
+    NavBar = () => <h1>Nav links go here</h1>;
 
 export default NavBar;
