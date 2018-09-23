@@ -5,12 +5,12 @@ import { connect } from 'react-redux';
 
 let Navbar = props => (
     <div>
-        <a href="/">Home</a>
+        <a href="/">All photos for sale</a>
         <br/>
         { 
             props.categories.map(category =>
             <p key={category.id}>
-            <Link to={`/categories/${category.id}`}>{category.title}</Link>
+                <Link to={`/categories/${category.id}`}>{category.title}</Link>
             </p>    
             )
         }
