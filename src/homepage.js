@@ -6,7 +6,8 @@ let Homepage = props => (
         { 
             props.products.map(product =>
             <li key={product.id}>
-            {`Antique photo of ${product.title}`}
+                <h3>{`Antique photo of ${product.title}`}</h3>
+                <img src={product.url} height="150" width="150" />
             </li>    
             )
         }

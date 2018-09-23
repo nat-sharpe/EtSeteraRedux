@@ -11,11 +11,11 @@ let initialState = {
         {id: "3", title: "Ambrotypes"},
     ],
     products: [
-        {id: "1", category: "2", title: "Abraham Lincoln"},
-        {id: "2", category: "1", title: "Sitting Bull"},
-        {id: "3", category: "3", title: "New York City Streetview"},
-        {id: "4", category: "3", title: "General Grant"},
-        {id: "5", category: "1", title: "Wild Bill Hickock"},
+        {id: "1", category: "2", title: "Abraham Lincoln", url: "https://p1.liveauctioneers.com/496/17300/5810694_1_x.jpg?version=1224172688&width=280&format=pjpg&auto=webp&quality=50"},
+        {id: "2", category: "2", title: "Sitting Bull", url: "https://p1.liveauctioneers.com/906/35418/14621922_1_x.jpg?version=1354308111&width=280&format=pjpg&auto=webp&quality=50"},
+        {id: "3", category: "3", title: "A New York City Streetview", url: "https://p1.liveauctioneers.com/581/38052/16204310_1_x.jpg?version=1362079675&width=280&format=pjpg&auto=webp&quality=50"},
+        {id: "4", category: "1", title: "General Grant", url: "https://p1.liveauctioneers.com/492/96987/49545957_1_x.jpg?version=1480512563&width=280&format=pjpg&auto=webp&quality=50"},
+        {id: "5", category: "1", title: "Wild Bill Hickock", url: "https://p1.liveauctioneers.com/906/56247/27469282_1_x.jpg?version=1401481666&width=280&format=pjpg&auto=webp&quality=50"},
     ],
     cartItems: []
 }
