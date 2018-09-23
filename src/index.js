@@ -15,6 +15,7 @@ let initialState = {
         {id: "2", category: "1", title: "Sitting Bull"},
         {id: "3", category: "3", title: "New York City Streetview"},
         {id: "4", category: "3", title: "General Grant"},
+        {id: "5", category: "1", title: "Wild Bill Hickock"},
     ],
     cartItems: []
 }
