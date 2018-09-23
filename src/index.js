@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
+import Router from './router.js';
 
 let initialState = {
     categories: [
@@ -29,7 +30,7 @@ let store = createStore(reducer, initialState, window.__REDUX_DEVTOOLS_EXTENSION
 
 let app =
     <Provider store={store}>    
-        <h1>Hi</h1>
+        <Router />
     </Provider>;
 
 ReactDOM.render(app, document.getElementById('root'));
