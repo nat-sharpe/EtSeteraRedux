@@ -21,8 +21,17 @@ let initialState = {
 }
 
 let reducer = (oldState, action) => {
-    if (action.type === "KILL") {
-        return "Die!";
+    if (action.type === "ADD") {
+        return {
+            ...oldState, 
+            cartItems: [...oldState.cartItems, action.payload]
+        }
+    }
+    if (action.type === "REMOVE") {
+        return {
+            ...oldState, 
+            cartItems: (oldState.cartItems).filter(id => id !== action.payload)
+        }
     }
     return oldState;
 }

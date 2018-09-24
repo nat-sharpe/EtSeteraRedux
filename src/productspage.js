@@ -7,7 +7,14 @@ let Productspages = props => {
     return <div>
         <h2>{`One of our antique ${foundCategory.title} portraying ${foundProduct.title}`}</h2>
         <img src={foundProduct.url} width="280" />
+        <button onClick={ () => {
+            if ((props.cart).includes(foundProduct.id) === true) {
+                return props.dispatch({type: "REMOVE", payload: foundProduct.id})
+            } else {
+            return props.dispatch({type: "ADD", payload: foundProduct.id})
+        }
+        }}>Add/Remove</button>
     </div>
 };
 
-export default connect( (state) => ({products : state.products, categories : state.categories}) )(Productspages);
+export default connect( (state) => ({products : state.products, categories : state.categories, cart: state.cartItems}) )(Productspages);
